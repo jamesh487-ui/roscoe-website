@@ -33,9 +33,12 @@ export default function Header() {
     <img
       src="/tradedesk-header-logo.png"
       alt="TradeDesk"
-      className="h-10 w-auto shrink-0 object-contain sm:h-11"
+      className="h-8 w-auto max-w-[8.75rem] shrink-0 object-contain sm:h-9 sm:max-w-none"
     />
   )
+
+  const logoClassName =
+    "inline-flex h-11 items-center overflow-hidden rounded-xl bg-white px-3 shadow-sm ring-1 ring-slate-200/20"
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07162f]/95 text-white shadow-lg shadow-slate-950/10 backdrop-blur">
@@ -44,12 +47,12 @@ export default function Header() {
           <button
             type="button"
             onClick={() => scrollToId("top")}
-            className="rounded-2xl bg-white px-3 py-1.5 shadow-sm"
+            className={logoClassName}
           >
             {logo}
           </button>
         ) : (
-          <Link to="/" className="rounded-2xl bg-white px-3 py-1.5 shadow-sm">
+          <Link to="/" className={logoClassName}>
             {logo}
           </Link>
         )}

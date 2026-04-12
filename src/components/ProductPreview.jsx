@@ -1,124 +1,88 @@
-import newJobScreenshot from "../assets/screenshots/new-job-screen.png"
-import quotesScreenshot from "../assets/screenshots/quotes-screen.png"
+import customerPortalScreenshot from "../assets/screenshots/customer-portal-screen.png"
+import formsPhoneScreenshot from "../assets/screenshots/product-forms-phone.png"
+import reportingPhoneScreenshot from "../assets/screenshots/product-reporting-phone.png"
 import supplierQuoteScreenshot from "../assets/screenshots/supplier-quote-request-screen.png"
 
+const previews = [
+  {
+    label: "Customer portal",
+    title: "Customers can approve without another phone call",
+    text: "Send portal links for quote review, job information and document access.",
+    image: customerPortalScreenshot,
+  },
+  {
+    label: "Supplier workflow",
+    title: "Smart-import supplier prices",
+    text: "Send supplier quote requests, track replies, smart-import prices with AI and convert approved lines into purchase orders.",
+    image: supplierQuoteScreenshot,
+  },
+  {
+    label: "Forms, certificates and records",
+    title: "Keep proof with the work",
+    text: "Forms, photos, certificates and job notes stay tied to the customer and property.",
+    image: formsPhoneScreenshot,
+  },
+  {
+    label: "Reporting",
+    title: "See what is moving",
+    text: "Keep an eye on work, spend, invoices and activity without building another spreadsheet.",
+    image: reportingPhoneScreenshot,
+  },
+]
+
 export default function ProductPreview() {
-  const screens = [
-    {
-      eyebrow: "Jobs",
-      title: "Book the job and keep the detail connected",
-      text: "Create the job, set the schedule and keep the customer, engineer and job detail in one place.",
-      proof:
-        "The workflow starts cleanly instead of being rebuilt later from notes and messages.",
-      theme: "job",
-    },
-    {
-      eyebrow: "Supplier quote requests",
-      title: "Bring supplier prices into the workflow",
-      text: "Send requests, track status and import prices from uploads or photos.",
-      proof:
-        "Pricing, VAT, line items and PO conversion stay in one place.",
-      theme: "supplier",
-    },
-    {
-      eyebrow: "Quotes",
-      title: "Quote professionally and let customers respond online",
-      text: "Build quotes, send them to customers and give them a clear accept or decline flow.",
-      proof:
-        "Less chasing, fewer loose messages and a cleaner route from quote to live work.",
-      theme: "light",
-    },
-  ]
-
   return (
-    <section className="bg-slate-950 py-14 text-white sm:py-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
-            Product highlights
-          </p>
+    <section className="relative overflow-hidden bg-slate-950 py-14 text-white sm:py-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(34,211,238,0.16),transparent_30%),radial-gradient(circle_at_85%_50%,rgba(59,130,246,0.14),transparent_32%)]" />
 
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Three parts of the workflow, joined up
-          </h2>
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="td-reveal flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-cyan-300">
+              Product proof
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] sm:text-5xl">
+              See the workflows before you test it.
+            </h2>
+          </div>
+
+          <p className="max-w-md text-sm leading-7 text-slate-300">
+            A quick look at the first areas testers will use: customer approvals,
+            supplier pricing, forms, certificates, records and reporting.
+          </p>
         </div>
 
-        <div className="mt-8 space-y-5 sm:mt-12 sm:space-y-8">
-          {screens.map((screen, index) => {
-            const textOrder = index % 2 === 0 ? "lg:order-1" : "lg:order-2"
-            const mockOrder = index % 2 === 0 ? "lg:order-2" : "lg:order-1"
-
-            return (
-              <div
-                key={screen.eyebrow}
-                className="grid gap-2 overflow-hidden rounded-[1.5rem] border border-slate-800 bg-slate-900 sm:rounded-[2rem] lg:grid-cols-2 lg:gap-6"
-              >
-                <div
-                  className={`order-2 flex flex-col justify-center p-5 sm:p-8 ${textOrder}`}
-                >
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
-                    {screen.eyebrow}
-                  </p>
-
-                  <h3 className="mt-2 text-xl font-semibold tracking-tight text-white sm:mt-3 sm:text-2xl">
-                    {screen.title}
-                  </h3>
-
-                  <p className="mt-3 text-sm leading-6 text-slate-300 sm:mt-4 sm:text-base sm:leading-7">
-                    {screen.text}
-                  </p>
-
-                  <p className="mt-3 text-sm leading-6 text-slate-400 sm:mt-4 sm:leading-7">
-                    {screen.proof}
-                  </p>
-                </div>
-
-                <div className={`order-1 p-3 sm:p-5 ${mockOrder}`}>
-                  {screen.theme === "job" && <JobImage />}
-                  {screen.theme === "supplier" && <SupplierImage />}
-                  {screen.theme === "light" && <QuoteImage />}
-                </div>
+        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {previews.map((preview, index) => (
+            <article
+              key={preview.title}
+              className="td-reveal group overflow-hidden rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-3 shadow-2xl shadow-slate-950/20 backdrop-blur transition hover:-translate-y-1 hover:bg-white/[0.09]"
+              style={{ animationDelay: `${index * 80}ms` }}
+            >
+              <div className="aspect-[9/12] overflow-hidden rounded-[1.25rem] bg-slate-900">
+                <img
+                  src={preview.image}
+                  alt={`TradeDesk ${preview.label} screenshot`}
+                  className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                />
               </div>
-            )
-          })}
+
+              <div className="p-3">
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-300">
+                  {preview.label}
+                </p>
+                <h3 className="mt-2 text-lg font-black leading-6 text-white">
+                  {preview.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  {preview.text}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
-  )
-}
-
-function JobImage() {
-  return (
-    <div className="rounded-[1.25rem] border border-slate-800 bg-slate-950 p-3 shadow-2xl shadow-slate-950/20 sm:rounded-[1.75rem] sm:p-4">
-      <img
-        src={newJobScreenshot}
-        alt="TradeDesk new job screen showing status, duration, scheduling and auto-schedule options"
-        className="mx-auto w-full max-w-[17rem] object-contain drop-shadow-[0_24px_40px_rgba(15,23,42,0.28)] sm:max-w-[22rem]"
-      />
-    </div>
-  )
-}
-
-function SupplierImage() {
-  return (
-    <div className="rounded-[1.25rem] border border-slate-800 bg-slate-950 p-3 shadow-2xl shadow-slate-950/20 sm:rounded-[1.75rem] sm:p-4">
-      <img
-        src={supplierQuoteScreenshot}
-        alt="TradeDesk supplier quote request screen showing supplier status, totals, line items and convert to purchase order action"
-        className="mx-auto w-full max-w-[17rem] object-contain drop-shadow-[0_24px_40px_rgba(15,23,42,0.28)] sm:max-w-[22rem]"
-      />
-    </div>
-  )
-}
-
-function QuoteImage() {
-  return (
-    <div className="rounded-[1.25rem] border border-slate-800 bg-slate-950 p-3 shadow-2xl shadow-slate-950/20 sm:rounded-[1.75rem] sm:p-4">
-      <img
-        src={quotesScreenshot}
-        alt="TradeDesk quote screen showing customer details, quote items and totals"
-        className="mx-auto w-full max-w-[17rem] object-contain drop-shadow-[0_24px_40px_rgba(15,23,42,0.28)] sm:max-w-[22rem]"
-      />
-    </div>
   )
 }

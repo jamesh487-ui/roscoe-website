@@ -125,36 +125,31 @@ export default function CTA() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
-              Early access
+              Beta testing
             </p>
 
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Help shape TradeDesk before launch
+              Test TradeDesk before launch
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-              Join the early access list if you want a cleaner way to run jobs,
-              customers, quotes, invoices and follow-ups from one place.
+              We are inviting a small number of plumbing and heating businesses
+              to try the app, give feedback and help shape the launch version.
             </p>
 
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-2xl border border-slate-700 bg-slate-800 px-4 py-4">
-                <div className="text-sm font-semibold text-white">
-                  For real trade workflow
+            <div className="mt-6 grid gap-3 text-sm text-slate-200 sm:grid-cols-3">
+              {[
+                "Early access to the app",
+                "Free setup support",
+                "Direct feedback into the roadmap",
+              ].map((benefit) => (
+                <div
+                  key={benefit}
+                  className="rounded-2xl border border-slate-700 bg-slate-800 px-4 py-4 font-semibold"
+                >
+                  {benefit}
                 </div>
-                <div className="mt-1 text-sm leading-6 text-slate-300">
-                  Built around jobs, money, suppliers, customers and records.
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-slate-700 bg-slate-800 px-4 py-4">
-                <div className="text-sm font-semibold text-white">
-                  Join the tester list
-                </div>
-                <div className="mt-1 text-sm leading-6 text-slate-300">
-                  Testers get free setup and support while helping shape the app.
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -183,20 +178,10 @@ export default function CTA() {
               </button>
             </div>
 
-            <div className="mt-8 space-y-3 text-sm text-slate-300">
-              <div className="flex items-start gap-3">
-                <span className="mt-0.5 text-cyan-300">•</span>
-                <p>Be first to hear when early access opens.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-0.5 text-cyan-300">•</span>
-                <p>Get updates as the product develops.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-0.5 text-cyan-300">•</span>
-                <p>Register as a tester if you want to try TradeDesk before wider release.</p>
-              </div>
-            </div>
+            <p className="mt-6 max-w-xl text-sm leading-7 text-slate-400">
+              Testing is focused on plumbing and heating first so we can get the
+              core workflow right before opening TradeDesk to more trades.
+            </p>
           </div>
 
           {isSuccess ? (
