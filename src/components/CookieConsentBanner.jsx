@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { hasAnalyticsConfig, loadGoogleAnalytics, trackPageView } from "../lib/analytics"
+import { hasAnalyticsConfig, loadGoogleAnalytics, loadMetaPixel, trackPageView } from "../lib/analytics"
 
 const STORAGE_KEY = "tradedesk_cookie_consent"
 
@@ -19,6 +19,7 @@ export default function CookieConsentBanner() {
   useEffect(() => {
     if (consent === "accepted") {
       loadGoogleAnalytics()
+      loadMetaPixel()
       trackPageView(`${location.pathname}${location.search}${location.hash}`)
     }
   }, [consent, location.hash, location.pathname, location.search])
@@ -37,7 +38,7 @@ export default function CookieConsentBanner() {
       <div>
         <p className="text-sm font-black tracking-[-0.02em]">Analytics cookies</p>
         <p className="mt-1 max-w-2xl text-xs font-semibold leading-5 text-slate-300 sm:text-sm">
-          We use Google Analytics to understand which pages people use. You can accept analytics cookies or keep them off.
+          We use analytics tools to understand which pages people use and measure marketing performance. You can accept analytics cookies or keep them off.
           Read more in our{" "}
           <Link to="/cookies" className="font-black text-cyan-200 underline underline-offset-4">
             Cookies Policy
