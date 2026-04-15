@@ -79,7 +79,7 @@ const steps = [
 
 const supplierImportRecording = {
   title: "Import supplier quotes without typing every line item.",
-  text: "Upload a supplier quote, let TradeDesk read the lines, then bring the materials and prices back into the job so quoting and job costing are quicker to finish.",
+  text: "Upload a supplier quote, let TradeDesk read the lines, then bring the materials and prices back into the job so quoting and profit tracking are quicker to finish.",
   video: supplierQuoteImportVideo,
 }
 

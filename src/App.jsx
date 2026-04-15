@@ -8,6 +8,7 @@ import Terms from "./pages/Terms"
 import Cookies from "./pages/Cookies"
 import Contact from "./pages/Contact"
 import ScrollToHash from "./components/ScrollToHash"
+import CookieConsentBanner from "./components/CookieConsentBanner"
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <CookieConsentBanner />
     </BrowserRouter>
   )
 }

@@ -60,6 +60,7 @@ const plans = [
       "Supplier AI price import",
       "Video transcription",
       "Smart auto scheduler",
+      "Job profit tracking",
       "Advanced reporting and KPIs",
       "Public team tracking",
     ],

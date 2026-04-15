@@ -87,7 +87,7 @@ const workflowSections = [
       { label: "Job timeline", plan: "Free", text: "Keep notes, updates, media and key job activity in one place." },
       { label: "Checklists", plan: "Free", text: "Build repeatable checks so work is completed properly and recorded clearly." },
       { label: "Video transcription", plan: "Pro+", text: "Turn job videos into written notes, summaries and follow-up actions." },
-      { label: "Profitability", plan: "Free", text: "Track materials, labour and job value against the work." },
+      { label: "Job profit tracking", plan: "Pro+", text: "Track labour, materials, mileage and direct expenses against each job." },
     ],
   },
   {
@@ -111,7 +111,7 @@ const workflowSections = [
   {
     eyebrow: "Suppliers, POs & inventory",
     title: "Control materials, supplier prices and purchase orders.",
-    text: "Keep supplier quotes, purchase orders, materials and job costs connected to the work instead of scattered across emails and notes.",
+    text: "Keep supplier quotes, purchase orders, materials and direct costs connected to the work instead of scattered across emails and notes.",
     tabletImage: supplierPoTabletScreenshot,
     phoneImage: inventoryPhoneScreenshot,
     reverse: false,
@@ -123,7 +123,7 @@ const workflowSections = [
       { label: "Supplier management", plan: "Starter+", text: "Store supplier records, send quote requests and create purchase orders." },
       { label: "Inventory", plan: "Free", text: "Manage materials, stock and supplier-specific pricing." },
       { label: "Smart import", plan: "Pro+", text: "Import full supplier quotes without manually typing every line item." },
-      { label: "Job costs", plan: "Free", text: "Track materials, supplier pricing and costs against each job." },
+      { label: "Direct costs", plan: "Pro+", text: "Track materials, supplier pricing, mileage and expenses against each job." },
     ],
   },
   {
@@ -170,7 +170,7 @@ const availability = [
   { feature: "Customer portal links", plans: allPlans },
   { feature: "Manual diary scheduling", plans: allPlans },
   { feature: "Basic checklists", plans: allPlans },
-  { feature: "Inventory and job costing", plans: allPlans },
+  { feature: "Inventory management", plans: allPlans },
   { feature: "Basic reporting", plans: allPlans },
   { feature: "Trade add-ons", values: { Free: "£15/mo", Starter: "£10/mo", Pro: "£5/mo", Premium: "Included" } },
   { feature: "Branded paperwork", plans: starterPlus },
@@ -181,6 +181,7 @@ const availability = [
   { feature: "AI message drafting", plans: starterPlus },
   { feature: "Smart supplier quote import", plans: proPlus },
   { feature: "Video transcription and summaries", plans: proPlus },
+  { feature: "Job profit tracking", plans: proPlus },
   { feature: "Advanced reporting and KPIs", plans: proPlus },
   { feature: "Route planner and public team tracking", plans: proPlus },
   { feature: "Advanced route planner", plans: premiumOnly },
@@ -309,15 +310,15 @@ const addOns = [
 
 const integrations = [
   { title: "Stripe", status: "Available", icon: stripeIcon, text: "Customer payments and subscription billing support." },
-  { title: "Tap to Pay on iPhone", status: "Coming soon", icon: stripeIcon, text: "Take contactless card payments in person from a compatible iPhone." },
+  { title: "Tap to Pay on iPhone", status: "Coming soon", tapToPay: true, text: "Take contactless card payments in person from a compatible iPhone." },
   { title: "Xero", status: "Coming soon", icon: "https://www.xero.com/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon.png", text: "Sync customers, invoices and payment status with Xero." },
   { title: "QuickBooks", status: "Coming soon", icon: "https://quickbooks.intuit.com/cas/dam/IMAGE/A7mjJ5rpg/apple-touch-icon-196x196.png", text: "Push invoices and customer accounts into QuickBooks." },
   { title: "Sage", status: "Coming soon", icon: sageLogo, largeIcon: true, text: "Accounting export and invoice sync for Sage users." },
-  { title: "FreeAgent", status: "Planned", icon: "https://www.freeagent.com/apple-touch-icon.png", text: "Accounting sync for FreeAgent users, including invoices and customer records." },
-  { title: "Google Calendar", status: "Planned", icon: "https://www.gstatic.com/images/branding/product/2x/calendar_2020q4_48dp.png", text: "Calendar sync for diary appointments and reminders." },
-  { title: "Outlook Calendar", status: "Planned", icon: outlookLogo, wideIcon: true, text: "Calendar sync for Microsoft 365 users." },
-  { title: "Google Drive", status: "Planned", icon: "https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png", text: "Export invoices, quotes, reports and checklist documents into Drive folders." },
-  { title: "Zapier", status: "Planned", icon: "https://zapier.com/l/favicon-180.png", text: "Send TradeDesk events into other apps without building every integration one-by-one." },
+  { title: "FreeAgent", status: "Coming soon", icon: "https://www.freeagent.com/apple-touch-icon.png", text: "Accounting sync for FreeAgent users, including invoices and customer records." },
+  { title: "Google Calendar", status: "Coming soon", icon: "https://www.gstatic.com/images/branding/product/2x/calendar_2020q4_48dp.png", text: "Calendar sync for diary appointments and reminders." },
+  { title: "Outlook Calendar", status: "Coming soon", icon: outlookLogo, wideIcon: true, text: "Calendar sync for Microsoft 365 users." },
+  { title: "Google Drive", status: "Coming soon", icon: "https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png", text: "Export invoices, quotes, reports and checklist documents into Drive folders." },
+  { title: "Zapier", status: "Coming soon", icon: "https://zapier.com/l/favicon-180.png", text: "Send TradeDesk events into other apps without building every integration one-by-one." },
 ]
 
 function PlanTick({ active }) {
@@ -396,17 +397,32 @@ function IntegrationCard({ integration }) {
     <div className="flex w-[16rem] shrink-0 flex-col rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex items-start justify-between gap-3">
         <div className="flex h-20 w-24 items-center justify-start">
-          <img
-            src={integration.icon}
-            alt={`${integration.title} logo`}
-            className={`${
-              integration.wideIcon
-                ? "h-14 w-24"
-                : integration.largeIcon
-                  ? "h-20 w-20"
-                  : "h-16 w-16"
-            } object-contain`}
-          />
+          {integration.tapToPay ? (
+            <div className="relative ml-2 flex h-16 w-16 items-center justify-center">
+              <div className="-rotate-12 rounded-[1rem] border-[3px] border-slate-950 bg-white px-2 py-3 shadow-lg">
+                <div className="mx-auto mb-2 h-1 w-5 rounded-full bg-slate-950" />
+                <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50">
+                  <span className="text-[0.48rem] font-black tracking-[-0.04em] text-[#635bff]">
+                    stripe
+                  </span>
+                  <span className="absolute -right-4 top-1 h-5 w-5 rounded-full border-r-[3px] border-[#635bff]" />
+                  <span className="absolute -right-6 -top-1 h-8 w-8 rounded-full border-r-[3px] border-[#635bff]/45" />
+                </div>
+              </div>
+            </div>
+          ) : (
+            <img
+              src={integration.icon}
+              alt={`${integration.title} logo`}
+              className={`${
+                integration.wideIcon
+                  ? "h-14 w-24"
+                  : integration.largeIcon
+                    ? "h-20 w-20"
+                    : "h-16 w-16"
+              } object-contain`}
+            />
+          )}
         </div>
         <StatusPill status={integration.status} />
       </div>

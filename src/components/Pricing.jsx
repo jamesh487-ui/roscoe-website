@@ -80,7 +80,7 @@ const plans = [
       "Unlimited users",
       "Up to 150 jobs per month",
       "250 AI drafts per month",
-      "Smart scheduling, route planner and advanced reporting",
+      "Smart scheduling, route planner and profit tracking",
       "Trade packs discounted to £5/mo",
     ],
     features: [
@@ -88,6 +88,7 @@ const plans = [
       "Supplier AI price import",
       "Video transcription",
       "Smart auto scheduler",
+      "Job profit tracking",
       "Advanced reporting",
       "Public team tracking",
     ],
