@@ -16,7 +16,7 @@ const features = [
   },
   {
     title: "Quotes and invoices",
-    text: "Quote faster, invoice cleanly and keep the customer journey tidy.",
+    text: "Quote faster, take deposits, raise staged invoices and keep the customer journey tidy.",
     icon: "QI",
   },
   {

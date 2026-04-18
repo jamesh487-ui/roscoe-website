@@ -6,8 +6,10 @@ const plans = [
     badge: "Best for trying it",
     limits: [
       "1 user",
-      "Up to 20 jobs per month",
+      "Up to 20 jobs per calendar month",
+      "20 AI drafts per month",
       "Core jobs, quotes, invoices and diary",
+      "Deposits and staged invoices",
       "Manual scheduling",
     ],
     features: [
@@ -15,6 +17,7 @@ const plans = [
       "Job management",
       "Quote management",
       "Invoice management",
+      "Deposits and staged invoices",
       "Basic diary",
       "Basic checklists",
       "Secure quote and invoice links",
@@ -28,7 +31,7 @@ const plans = [
     badge: "Best for sole traders",
     limits: [
       "Up to 3 users",
-      "Up to 50 jobs per month",
+      "Up to 50 jobs per calendar month",
       "50 AI drafts per month",
       "Inbox, reminders and supplier tools",
     ],
@@ -36,6 +39,8 @@ const plans = [
       "Everything in Free",
       "TradeDesk inbox and customer messages",
       "Customer portal",
+      "Online booking",
+      "Asset and appliance records",
       "Supplier management and purchase orders",
       "Diary slot finder",
       "Advanced checklists and checklist reports",
@@ -50,7 +55,7 @@ const plans = [
     badge: "Best value",
     limits: [
       "Unlimited users",
-      "Up to 150 jobs per month",
+      "Up to 150 jobs per calendar month",
       "250 AI drafts per month",
       "40 smart AI functions and 10 route planner runs",
     ],
@@ -74,7 +79,7 @@ const plans = [
     badge: "Built for higher volume",
     limits: [
       "Unlimited users",
-      "Up to 350 jobs per month",
+      "Up to 350 jobs per calendar month",
       "Unlimited AI drafts per month",
       "75 smart AI functions and 25 route planner runs",
     ],
