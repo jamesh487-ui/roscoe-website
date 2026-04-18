@@ -52,7 +52,7 @@ const workflowSections = [
       { label: "Slot finder", plan: "Starter+", text: "Find suitable gaps in the diary without checking every day manually." },
       { label: "Online booking", plan: "Starter+", text: "Let customers choose from available appointment slots without opening the full customer portal." },
       { label: "Smart scheduling", plan: "Pro+", text: "Suggest booking times around availability, travel time and existing work." },
-      { label: "Route planner usage", plan: "Pro+", text: "Pro includes 10 route planner runs per month; Premium includes 25." },
+      { label: "Route planner", plan: "Pro+", text: "Plan diary routes around location, travel time and the order of work." },
     ],
   },
   {
@@ -161,7 +161,7 @@ const workflowSections = [
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Message drafting", plan: "Free+", text: "Create customer-facing message drafts faster, then review and send when ready." },
-      { label: "Smart usage", plan: "Pro+", text: "Pro includes 40 shared Smart tool runs per month; Premium includes 75." },
+      { label: "Shared Smart tools", plan: "Pro+", text: "Use heavier Smart tools for supplier imports, matching and video summaries." },
       { label: "Smart imports", plan: "Pro+", text: "Read supplier quotes faster and reduce manual line-item entry." },
       { label: "Video summaries", plan: "Pro+", text: "Turn job videos into written notes, summaries and follow-up actions." },
       { label: "KPIs & reports", plan: "Pro+", text: "Track quote conversion, paid rate, outstanding balances and overdue work." },
@@ -180,7 +180,6 @@ const availability = [
   { feature: "Inventory management", plans: allPlans },
   { feature: "Basic reporting", plans: allPlans },
   { feature: "Trade add-ons", values: { Free: "£15/mo", Starter: "£10/mo", Pro: "£5/mo", Premium: "Included" } },
-  { feature: "Trade pack Smart Diagnostics allowance", values: { Free: "20/mo with pack", Starter: "30/mo with pack", Pro: "Uses Smart tool cap", Premium: "Uses Smart tool cap" } },
   { feature: "Customer portal", plans: starterPlus },
   { feature: "Online booking", plans: starterPlus },
   { feature: "Branded paperwork", plans: starterPlus },
@@ -190,11 +189,9 @@ const availability = [
   { feature: "Diary slot finder and multi-visit jobs", plans: starterPlus },
   { feature: "Smart supplier quote import", plans: proPlus },
   { feature: "Video transcription and summaries", plans: proPlus },
-  { feature: "Shared Smart tool usage cap", values: { Free: "—", Starter: "—", Pro: "40/mo", Premium: "75/mo" } },
   { feature: "Job profit tracking", plans: proPlus },
   { feature: "Advanced reporting and KPIs", plans: proPlus },
   { feature: "Route planner and customer job tracking links", plans: proPlus },
-  { feature: "Route planner usage cap", values: { Free: "—", Starter: "—", Pro: "10/mo", Premium: "25/mo" } },
   { feature: "Advanced route planner", plans: premiumOnly },
   { feature: "Guided setup and priority support", plans: premiumOnly },
 ]
@@ -209,7 +206,7 @@ const addOns = [
     includes: [
       "Gas safety, commissioning and service certificate packs",
       "Heating and plumbing forms, warning notices and job records",
-      "Smart Diagnostics with 20 runs on Free packs, 30 on Starter packs, then shared Pro and Premium Smart tool allowances",
+      "Smart Diagnostics for Plumbing & Heating with its own monthly allowance",
       "Trade calculators for heating, pipework and materials",
     ],
   },

@@ -153,7 +153,7 @@ const addOns = [
     title: "Plumbing & Heating",
     status: "Available first",
     image: plumbingHeatingAddOnImage,
-    text: "Gas, heating and service records, warning notices and Smart Diagnostics. Free packs include 20 diagnostics runs, Starter packs include 30, and Pro or Premium use the plan's shared Smart tool allowance.",
+    text: "Gas, heating and service records, warning notices and Plumbing & Heating Smart Diagnostics. Diagnostics runs are separate from the shared Smart tool allowance: Free includes 10, Starter 20, Pro 30 and Premium 40 per month.",
   },
   {
     title: "Electrical",
@@ -418,9 +418,9 @@ export default function Pricing() {
               </h3>
               <p className="mt-4 text-base leading-8 text-slate-600">
                 Trade packs are optional add-ons for forms, records and
-                specialist tools. Free and Starter packs include a small
-                allowance for pack-specific smart tools. Pro and Premium use
-                the plan's shared Smart tool allowance.
+                specialist tools. The Plumbing & Heating pack includes its own
+                Smart Diagnostics allowance, separate from the shared Smart
+                tool allowance on Pro and Premium.
               </p>
             </div>
 
