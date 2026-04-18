@@ -52,7 +52,7 @@ const workflowSections = [
       { label: "Slot finder", plan: "Starter+", text: "Find suitable gaps in the diary without checking every day manually." },
       { label: "Online booking", plan: "Starter+", text: "Let customers choose from available appointment slots without opening the full customer portal." },
       { label: "Smart scheduling", plan: "Pro+", text: "Suggest booking times around availability, travel time and existing work." },
-      { label: "Advanced routing", plan: "Premium", text: "Higher route-planning usage for busier teams and heavier workloads." },
+      { label: "Route planner usage", plan: "Pro+", text: "Pro includes 10 route planner runs per month; Premium includes 25." },
     ],
   },
   {
@@ -161,6 +161,7 @@ const workflowSections = [
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Message drafting", plan: "Free+", text: "Create customer-facing message drafts faster, then review and send when ready." },
+      { label: "Smart AI usage", plan: "Pro+", text: "Pro includes 40 smart AI runs per month; Premium includes 75." },
       { label: "Smart imports", plan: "Pro+", text: "Use AI to read supplier quotes and reduce manual line-item entry." },
       { label: "Video summaries", plan: "Pro+", text: "Turn job videos into written notes, summaries and follow-up actions." },
       { label: "KPIs & reports", plan: "Pro+", text: "Track quote conversion, paid rate, outstanding balances and overdue work." },
@@ -188,9 +189,11 @@ const availability = [
   { feature: "Diary slot finder and multi-visit jobs", plans: starterPlus },
   { feature: "Smart supplier quote import", plans: proPlus },
   { feature: "Video transcription and summaries", plans: proPlus },
+  { feature: "Smart AI usage cap", values: { Free: "—", Starter: "—", Pro: "40/mo", Premium: "75/mo" } },
   { feature: "Job profit tracking", plans: proPlus },
   { feature: "Advanced reporting and KPIs", plans: proPlus },
   { feature: "Route planner and customer job tracking links", plans: proPlus },
+  { feature: "Route planner usage cap", values: { Free: "—", Starter: "—", Pro: "10/mo", Premium: "25/mo" } },
   { feature: "Advanced route planner", plans: premiumOnly },
   { feature: "Priority setup and support", plans: premiumOnly },
 ]

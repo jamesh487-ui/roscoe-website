@@ -57,7 +57,8 @@ const plans = [
       "Unlimited users",
       "Up to 150 jobs per calendar month",
       "250 AI drafts per month",
-      "40 smart AI functions and 10 route planner runs",
+      "40 smart AI runs per month",
+      "10 route planner runs per month",
     ],
     features: [
       "Everything in Starter",
@@ -81,7 +82,8 @@ const plans = [
       "Unlimited users",
       "Up to 350 jobs per calendar month",
       "Unlimited AI drafts per month",
-      "75 smart AI functions and 25 route planner runs",
+      "75 smart AI runs per month",
+      "25 route planner runs per month",
     ],
     features: [
       "Everything in Pro",

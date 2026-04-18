@@ -86,7 +86,8 @@ const plans = [
       "Unlimited users",
       "Up to 150 jobs per calendar month",
       "250 AI drafts per month",
-      "Smart scheduling, route planner and profit tracking",
+      "40 smart AI runs per month",
+      "10 route planner runs per month",
       "Trade packs discounted to £5/mo",
     ],
     features: [
@@ -114,7 +115,8 @@ const plans = [
       "Unlimited users",
       "Up to 350 jobs per calendar month",
       "Unlimited AI drafts per month",
-      "75 smart AI functions and 25 route planner runs",
+      "75 smart AI runs per month",
+      "25 route planner runs per month",
       "Trade packs included",
     ],
     features: [
