@@ -185,7 +185,7 @@ const availability = [
   { feature: "Supplier quote requests and purchase orders", plans: starterPlus },
   { feature: "Asset records and follow-up reminders", plans: starterPlus },
   { feature: "Diary slot finder and multi-visit jobs", plans: starterPlus },
-  { feature: "AI message drafting", values: { Free: "20/mo", Starter: "50/mo", Pro: "250/mo", Premium: "Unlimited" } },
+  { feature: "AI message drafting", plans: allPlans },
   { feature: "Smart supplier quote import", plans: proPlus },
   { feature: "Video transcription and summaries", plans: proPlus },
   { feature: "Job profit tracking", plans: proPlus },
