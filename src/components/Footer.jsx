@@ -58,6 +58,10 @@ export default function Footer() {
               <Link to="/cookies" className="transition hover:text-white">
                 Cookies Policy
               </Link>
+
+              <Link to="/account-deletion" className="transition hover:text-white">
+                Account Deletion
+              </Link>
             </div>
 
             <p className="mt-4 text-sm text-slate-400">

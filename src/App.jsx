@@ -7,6 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"
 import Terms from "./pages/Terms"
 import Cookies from "./pages/Cookies"
 import Contact from "./pages/Contact"
+import AccountDeletion from "./pages/AccountDeletion"
 import ScrollToHash from "./components/ScrollToHash"
 import CookieConsentBanner from "./components/CookieConsentBanner"
 
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/account-deletion" element={<AccountDeletion />} />
       </Routes>
       <CookieConsentBanner />
     </BrowserRouter>
