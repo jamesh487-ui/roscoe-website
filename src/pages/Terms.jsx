@@ -7,7 +7,7 @@ const sections = [
     paragraphs: [
       <>
         TradeDesk is provided by{" "}
-        <code>James Harrison trading as TradeDesk UK</code> (
+        <code>TradeDesk App Ltd</code> (
         <code>TradeDesk</code>, <code>we</code>, <code>us</code>,{" "}
         <code>our</code>).
       </>,
@@ -422,7 +422,7 @@ const sections = [
     title: "24. Contact",
     paragraphs: [<>Questions about these Terms can be sent to:</>],
     contact: [
-      "James Harrison trading as TradeDesk UK",
+      "TradeDesk App Ltd",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
       "admin@tradedeskuk.com",
     ],
@@ -431,9 +431,8 @@ const sections = [
     title: "25. Practical publication notes",
     paragraphs: [
       <>
-        Before publishing these Terms, update them again if your legal trading
-        identity changes, for example if you later incorporate and begin
-        trading through <code>TradeDesk UK Ltd</code>.
+        These Terms should stay aligned with the current legal trading entity,
+        website footer, signup flow and any subscription acceptance screens.
       </>,
       <>You should also make sure these Terms are linked from:</>,
     ],

@@ -422,7 +422,7 @@ const sections = [
       <>Questions, complaints or requests about this Privacy Policy can be sent to:</>,
     ],
     contact: [
-      "James Harrison trading as TradeDesk UK",
+      "TradeDesk App Ltd",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
       "admin@tradedeskuk.com",
     ],
@@ -431,9 +431,9 @@ const sections = [
     title: "20. Practical publication notes",
     paragraphs: [
       <>
-        Before publishing this policy, update it again if your legal trading
-        identity changes, for example if you later incorporate and begin
-        trading through <code>TradeDesk UK Ltd</code>.
+        This policy should stay aligned with the current legal trading entity,
+        website footer, signup flow and any customer-facing forms that link to
+        it.
       </>,
       <>You should also make sure the published version is linked from:</>,
     ],
@@ -445,7 +445,7 @@ const sections = [
     ],
     closing: [<>For privacy questions or requests, contact:</>],
     contact: [
-      "James Harrison trading as TradeDesk UK",
+      "TradeDesk App Ltd",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
       "admin@tradedeskuk.com",
     ],
@@ -466,7 +466,7 @@ export default function PrivacyPolicy() {
 
         <p className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-sm leading-6 text-slate-700">
           This Privacy Policy explains how{" "}
-          <code>James Harrison trading as TradeDesk UK</code> (
+          <code>TradeDesk App Ltd</code> (
           <code>TradeDesk</code>, <code>we</code>, <code>us</code>,{" "}
           <code>our</code>) collects, uses, stores and shares personal data
           when you use the TradeDesk website, mobile applications and related
