@@ -1,4 +1,4 @@
-import fieldPhoneImage from "../assets/screenshots/field-phone.png"
+import fieldPhoneImage from "../assets/screenshots/field-phone.jpg"
 
 const bullets = [
   "Quickly raise jobs with auto scheduling",
