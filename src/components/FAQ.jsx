@@ -2,29 +2,29 @@ import { useState } from "react"
 
 const faqs = [
   {
-    question: "Who is TradeDesk built for?",
+    question: "Who is Roscoe built for?",
     answer:
-      "TradeDesk is designed for UK sole traders and small trade businesses, especially plumbing, heating, gas, renewables and field-service style work where jobs, records, customers and money all need to stay connected.",
+      "Roscoe is designed for UK sole traders and small trade businesses, especially plumbing, heating, gas, renewables and field-service style work where jobs, records, customers and money all need to stay connected.",
   },
   {
-    question: "Is TradeDesk just a quoting app or invoicing app?",
+    question: "Is Roscoe just a quoting app or invoicing app?",
     answer:
-      "No. TradeDesk is built as a connected operating system for the wider business. Quotes, invoices, customers, properties, supplier pricing, reminders, calls, appliances and job records are designed to work together.",
+      "No. Roscoe is built as a connected operating system for the wider business. Quotes, invoices, customers, properties, supplier pricing, reminders, calls, appliances and job records are designed to work together.",
   },
   {
     question: "Can I move customer data in from older systems?",
     answer:
-      "Yes. TradeDesk is being built to support customer CSV import so businesses can migrate customer records more easily instead of starting from scratch.",
+      "Yes. Roscoe supports customer CSV import so businesses can migrate customer records more easily instead of starting from scratch.",
   },
   {
     question: "Will it support forms, certificates and digital records?",
     answer:
-      "Yes. TradeDesk is being shaped to support real trade paperwork and connected digital records, including certificates, service records, job forms and completed compliance-related records as part of the wider workflow.",
+      "Yes. Roscoe is built to support real trade paperwork and connected digital records, including certificates, service records, job forms and completed compliance-related records as part of the wider workflow.",
   },
   {
-    question: "How do I get access first?",
+    question: "How do I get started?",
     answer:
-      "Register your interest and we will be in touch when TradeDesk is ready, including the right invite link for your device.",
+      "Start with the free plan on web or mobile, then move up when you need more jobs, more automation or more team access.",
   },
 ]
 
@@ -48,7 +48,7 @@ export default function FAQ() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            TradeDesk is aimed at businesses that want better control, cleaner
+            Roscoe is aimed at businesses that want better control, cleaner
             workflow and less reliance on disconnected systems.
           </p>
         </div>

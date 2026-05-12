@@ -4,12 +4,11 @@ import Hero from "../components/Hero"
 import HomeBenefits from "../components/HomeBenefits"
 import HomePlans from "../components/HomePlans"
 import ProductPreview from "../components/ProductPreview"
-import CTA from "../components/CTA"
 import Footer from "../components/Footer"
 
 export default function Home() {
   useEffect(() => {
-    document.title = "TradeDesk - Job Management Software for Trade Businesses"
+    document.title = "Roscoe - Job Management Software for Trade Businesses"
   }, [])
 
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <HomeBenefits />
       <ProductPreview />
       <HomePlans />
-      <CTA />
       <Footer />
     </main>
   )

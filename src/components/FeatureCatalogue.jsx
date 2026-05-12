@@ -45,7 +45,7 @@ const workflowSections = [
     reverse: false,
     rawTablet: true,
     rawPhone: true,
-    tabletScaleClass: "scale-110 lg:scale-125",
+    tabletScaleClass: "scale-95 lg:scale-105",
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Manual scheduling", plan: "Free", text: "Day, week and month diary views for booking work by hand." },
@@ -58,13 +58,13 @@ const workflowSections = [
   {
     eyebrow: "Customer management",
     title: "Keep every customer, site and asset connected.",
-    text: "Customer records should hold more than a phone number. TradeDesk links customers, addresses, assets, documents, jobs, quotes and invoices together.",
+    text: "Customer records should hold more than a phone number. Roscoe links customers, addresses, assets, documents, jobs, quotes and invoices together.",
     tabletImage: customerPortalScreenshot,
     phoneImage: customerDetailPhoneScreenshot,
     reverse: true,
     rawTablet: true,
     rawPhone: true,
-    tabletScaleClass: "scale-120 lg:scale-135",
+    tabletScaleClass: "scale-105 lg:scale-112",
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Customer management", plan: "Free", text: "Manage names, contacts, addresses and job history." },
@@ -87,6 +87,8 @@ const workflowSections = [
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Job timeline", plan: "Free", text: "Keep notes, updates, media and key job activity in one place." },
+      { label: "Job photos", plan: "Free", text: "Capture and store photo evidence against the job record." },
+      { label: "Job videos", plan: "Starter+", text: "Capture short site videos and keep them attached to the work. Starter allows 30-second clips, Pro and Premium allow 60-second clips." },
       { label: "Checklists", plan: "Free", text: "Build repeatable checks so work is completed properly and recorded clearly." },
       { label: "Video transcription", plan: "Pro+", text: "Turn job videos into written notes, summaries and follow-up actions." },
       { label: "Job profit tracking", plan: "Pro+", text: "Track labour, materials, mileage and direct expenses against each job." },
@@ -94,7 +96,7 @@ const workflowSections = [
   },
   {
     eyebrow: "Quotes, Invoices & Payments",
-    title: "From customer enquiry to getting paid, TradeDesk has you covered.",
+    title: "From customer enquiry to getting paid, Roscoe has you covered.",
     text: "Create professional quotes and invoices, take deposits, raise staged invoices and keep payment status connected to the job.",
     tabletImage: financeTabletScreenshot,
     phoneImage: invoicePhoneScreenshot,
@@ -139,7 +141,7 @@ const workflowSections = [
     reverse: true,
     rawTablet: true,
     rawPhone: true,
-    tabletScaleClass: "scale-120 lg:scale-125",
+    tabletScaleClass: "scale-105 lg:scale-112",
     phonePosition: "-bottom-7 -right-1 sm:-right-4 lg:-right-8",
     bullets: [
       { label: "Structured records", plan: "Add-on", text: "Complete forms, certificates, reports and handover notes from the job." },
@@ -172,27 +174,30 @@ const workflowSections = [
 const availability = [
   { feature: "Customer, site and contact management", plans: allPlans },
   { feature: "Jobs, diary, quotes and invoices", plans: allPlans },
+  { feature: "Job photos", plans: allPlans },
   { feature: "Secure quote and invoice links", plans: allPlans },
   { feature: "Deposits and staged invoices", plans: allPlans },
   { feature: "Manual diary scheduling", plans: allPlans },
   { feature: "Basic checklists", plans: allPlans },
-  { feature: "Smart message drafting", plans: allPlans },
+  { feature: "Smart message drafting*", plans: allPlans },
   { feature: "Inventory management", plans: allPlans },
   { feature: "Basic reporting", plans: allPlans },
   { feature: "Trade add-ons", values: { Free: "£15/mo", Starter: "£10/mo", Pro: "£5/mo", Premium: "Included" } },
   { feature: "Customer portal", plans: starterPlus },
+  { feature: "Job video uploads*", plans: starterPlus },
   { feature: "Online booking", plans: starterPlus },
   { feature: "Branded paperwork", plans: starterPlus },
   { feature: "Advanced checklists and checklist reports", plans: starterPlus },
   { feature: "Supplier quote requests and purchase orders", plans: starterPlus },
   { feature: "Asset records and follow-up reminders", plans: starterPlus },
   { feature: "Diary slot finder and multi-visit jobs", plans: starterPlus },
-  { feature: "Smart supplier quote import", plans: proPlus },
-  { feature: "Video transcription and summaries", plans: proPlus },
+  { feature: "Web and desktop workspace access (when available)", plans: proPlus },
+  { feature: "Smart supplier quote import*", plans: proPlus },
+  { feature: "Video transcription and summaries*", plans: proPlus },
   { feature: "Job profit tracking", plans: proPlus },
   { feature: "Advanced reporting and KPIs", plans: proPlus },
-  { feature: "Route planner and customer job tracking links", plans: proPlus },
-  { feature: "Advanced route planner", plans: premiumOnly },
+  { feature: "Route planner and customer job tracking links*", plans: proPlus },
+  { feature: "Advanced route planner*", plans: premiumOnly },
   { feature: "Guided setup and priority support", plans: premiumOnly },
 ]
 
@@ -326,7 +331,7 @@ const integrations = [
   { title: "Google Calendar", status: "Coming soon", icon: "https://www.gstatic.com/images/branding/product/2x/calendar_2020q4_48dp.png", text: "Calendar sync for diary appointments and reminders." },
   { title: "Outlook Calendar", status: "Coming soon", icon: outlookLogo, wideIcon: true, text: "Calendar sync for Microsoft 365 users." },
   { title: "Google Drive", status: "Coming soon", icon: "https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png", text: "Export invoices, quotes, reports and checklist documents into Drive folders." },
-  { title: "Zapier", status: "Coming soon", icon: "https://zapier.com/l/favicon-180.png", text: "Send TradeDesk events into other apps without building every integration one-by-one." },
+  { title: "Zapier", status: "Coming soon", icon: "https://zapier.com/l/favicon-180.png", text: "Send Roscoe events into other apps without building every integration one-by-one." },
 ]
 
 function PlanTick({ active }) {
@@ -668,7 +673,7 @@ export default function FeatureCatalogue() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-              TradeDesk offers advanced features to spend less time worrying about paperwork and more time earning money.
+              Roscoe offers advanced features to spend less time worrying about paperwork and more time earning money.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -691,11 +696,11 @@ export default function FeatureCatalogue() {
             <DevicePair
               tabletImage={featureHeroTabletScreenshot}
               phoneImage={featureHeroPhoneScreenshot}
-              title="TradeDesk workflow"
+              title="Roscoe workflow"
               phonePosition="-bottom-7 -right-1 sm:-right-4 lg:-right-8"
               rawTablet
               rawPhone
-              tabletScaleClass="scale-110 lg:scale-125"
+              tabletScaleClass="scale-95 lg:scale-105"
             />
           </div>
         </div>
@@ -715,7 +720,7 @@ export default function FeatureCatalogue() {
               </div>
               <p className="max-w-md text-sm leading-7 text-slate-600">
                 From scheduling and customer records to quotes, invoices,
-                checklists, supplier tools and reporting, TradeDesk gives you
+                checklists, supplier tools and reporting, Roscoe gives you
                 practical tools to stay organised without adding more admin.
               </p>
             </div>
@@ -745,6 +750,9 @@ export default function FeatureCatalogue() {
           </div>
 
           <div className="mt-9 overflow-x-auto rounded-[1.8rem] border border-white/10 bg-white/[0.06]">
+            <div className="border-b border-white/10 px-4 py-3 text-xs font-bold leading-6 text-slate-300 sm:px-5">
+              * Limits apply on some features and allowances vary by plan.
+            </div>
             <div className="min-w-[42rem]">
               <div className="grid grid-cols-[1.6fr_repeat(4,0.7fr)] border-b border-white/10 bg-white/[0.05]">
                 <div className="px-4 py-4 text-xs font-black uppercase tracking-[0.16em] text-slate-300 sm:px-5">

@@ -31,7 +31,7 @@ export default function SupplierControl() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            TradeDesk treats supplier workflow as part of the product, not an
+            Roscoe treats supplier workflow as part of the product, not an
             afterthought. That means quote requests, purchase orders, supplier
             detail and inventory pricing all sit closer to the jobs and quotes
             they affect.

@@ -16,7 +16,7 @@ const steps = [
     text: "Add business details, working hours, team members, services and the trade setup needed for the way you work.",
     recording: {
       title: "Set up the workspace",
-      text: "Enter the business details, choose the trade setup, check working hours and move through the setup screens ready to start using TradeDesk.",
+      text: "Enter the business details, choose the trade setup, check working hours and move through the setup screens ready to start using Roscoe.",
       video: setupFlowVideo,
     },
   },
@@ -79,13 +79,13 @@ const steps = [
 
 const supplierImportRecording = {
   title: "Import supplier quotes without typing every line item.",
-  text: "Upload a supplier quote, let TradeDesk read the lines, then bring the materials and prices back into the job so quoting and profit tracking are quicker to finish.",
+  text: "Upload a supplier quote, let Roscoe read the lines, then bring the materials and prices back into the job so quoting and profit tracking are quicker to finish.",
   video: supplierQuoteImportVideo,
 }
 
 const quoteBuildRecording = {
-  title: "Add materials, add labour and convert the quote.",
-  text: "Add catalogue materials, include labour, then convert the job into a quote without rebuilding the same information twice.",
+  title: "Add materials, add labour and create a quote.",
+  text: "Add catalogue materials, include labour, then create a quote from the job without rebuilding the same information twice.",
   video: inventoryLabourQuoteFlowVideo,
 }
 
@@ -198,7 +198,7 @@ export default function HowItWorks() {
             App walkthroughs
           </p>
           <p className="mt-3 text-base font-bold leading-8 text-slate-600 sm:text-lg">
-            These short videos show a small part of what TradeDesk can do,
+            These short videos show a small part of what Roscoe can do,
             from setup through to scheduling, site work, supplier pricing and
             invoicing.
           </p>

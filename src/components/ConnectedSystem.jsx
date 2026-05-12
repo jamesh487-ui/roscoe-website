@@ -43,7 +43,7 @@ export default function ConnectedSystem() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              TradeDesk connects the core parts of the business so each action
+              Roscoe connects the core parts of the business so each action
               feeds the next. Quote the work, convert it into a live job, track
               the schedule, manage supplier cost, raise the invoice, send the
               reminder and keep the full history attached to the right customer

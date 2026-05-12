@@ -41,7 +41,7 @@ export default function WorkflowBenefits() {
             <p className="mt-5 text-base leading-7 text-slate-300">
               A lot of lost revenue is not dramatic. It is the quote that never
               got chased, the service reminder that never went out, the booking
-              that was not confirmed, or the invoice that slipped. TradeDesk is
+              that was not confirmed, or the invoice that slipped. Roscoe is
               designed to keep those follow-ups visible and connected.
             </p>
 
@@ -67,7 +67,7 @@ export default function WorkflowBenefits() {
             </h2>
 
             <p className="mt-5 text-base leading-7 text-slate-300">
-              TradeDesk includes specialist tools to support real operational
+              Roscoe includes specialist tools to support real operational
               work, not gimmicks. The goal is to help engineers and office
               workflow move faster without jumping between separate apps.
             </p>

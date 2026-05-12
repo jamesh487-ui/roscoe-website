@@ -5,7 +5,7 @@ export default function About() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">
-              About TradeDesk
+              About Roscoe
             </p>
 
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
@@ -15,7 +15,7 @@ export default function About() {
 
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-base leading-8 text-slate-600">
-              TradeDesk is being developed around the real operational pressure
+              Roscoe is being developed around the real operational pressure
               points trade businesses deal with every day: customer detail in
               one place, quotes somewhere else, invoices in another app,
               supplier prices buried in emails, reminders living in your head
@@ -30,7 +30,7 @@ export default function About() {
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-600">
-              TradeDesk is positioned as the connected operating system for
+              Roscoe is positioned as the connected operating system for
               modern trade businesses, starting with plumbing, heating, gas,
               renewables and field-service style trades.
             </p>

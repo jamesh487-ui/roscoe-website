@@ -1,5 +1,6 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import { MARKETING_URL, SUPPORT_EMAIL } from "../lib/siteLinks"
 
 export default function Cookies() {
   return (
@@ -21,8 +22,8 @@ export default function Cookies() {
               Who we are
             </h2>
             <p className="mt-2">
-              This Cookies Policy explains how TradeDesk uses cookies and
-              similar technologies on tradedeskuk.com.
+              This Cookies Policy explains how Roscoe uses cookies and similar
+              technologies on {MARKETING_URL.replace("https://", "")}.
             </p>
           </section>
 
@@ -49,8 +50,8 @@ export default function Cookies() {
             </p>
 
             <p className="mt-2">
-              At the pre-launch stage, we aim to keep cookie use limited and
-              proportionate to the needs of the website.
+              We aim to keep cookie use limited and proportionate to the needs
+              of the website.
             </p>
           </section>
 
@@ -154,9 +155,9 @@ export default function Cookies() {
             </p>
 
             <p className="mt-3">
-              TradeDesk UK
+              Roscoe
               <br />
-            Email: admin@tradedeskuk.com
+            Email: {SUPPORT_EMAIL}
             </p>
           </section>
         </div>

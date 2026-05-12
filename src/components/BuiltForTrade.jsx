@@ -39,7 +39,7 @@ export default function BuiltForTrade() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            TradeDesk is designed for the way plumbing, heating, gas,
+            Roscoe is designed for the way plumbing, heating, gas,
             renewables and field-service style businesses actually work. It
             connects day-to-day operational detail so the office side and the
             field side stay in sync.

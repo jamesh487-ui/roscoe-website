@@ -2,7 +2,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import PageIntro from "../components/PageIntro"
 import HowItWorks from "../components/HowItWorks"
-import CTA from "../components/CTA"
 
 export default function HowItWorksPage() {
   return (
@@ -10,11 +9,10 @@ export default function HowItWorksPage() {
       <Header />
       <PageIntro
         eyebrow="How It Works"
-        title="Watch TradeDesk in action."
+        title="Watch Roscoe in action."
         text="Short walkthroughs showing the main setup, job, diary, checklist, supplier quote and invoicing flows inside the app."
       />
       <HowItWorks />
-      <CTA />
       <Footer />
     </main>
   )

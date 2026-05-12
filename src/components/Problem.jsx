@@ -34,7 +34,7 @@ export default function Problem() {
             </div>
 
             <p className="text-base leading-7 text-slate-600 sm:text-lg">
-              TradeDesk brings the daily workflow together so jobs, customers,
+              Roscoe brings the daily workflow together so jobs, customers,
               quotes, invoices, suppliers and reminders are not scattered across
               paper notes, spreadsheets, messages and separate apps.
             </p>

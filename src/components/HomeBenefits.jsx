@@ -17,7 +17,7 @@ export default function HomeBenefits() {
           <div className="td-reveal overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-2 shadow-xl shadow-slate-200/60">
             <img
               src={fieldPhoneImage}
-              alt="TradeDesk being used on site by a trade business"
+              alt="Roscoe being used on site by a trade business"
               className="aspect-[4/3] w-full rounded-[1.55rem] object-cover object-center sm:aspect-[16/11]"
             />
           </div>
@@ -28,7 +28,7 @@ export default function HomeBenefits() {
             </p>
 
             <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-slate-950 sm:text-5xl">
-              From customer enquiry to getting paid, TradeDesk has you covered.
+              From customer enquiry to getting paid, Roscoe has you covered.
             </h2>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">

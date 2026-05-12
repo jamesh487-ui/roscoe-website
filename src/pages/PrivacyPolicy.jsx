@@ -1,5 +1,6 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import { SUPPORT_EMAIL } from "../lib/siteLinks"
 
 const sections = [
   {
@@ -7,15 +8,15 @@ const sections = [
     paragraphs: [<>This Privacy Policy applies to:</>],
     bullets: [
       "visitors to our website",
-      "people who create or use a TradeDesk account",
-      "team members invited into a TradeDesk workspace",
-      "customers, tenants, landlords, occupiers, suppliers and other contacts whose details are entered into TradeDesk by a workspace user",
-      "people who receive messages, quotes, invoices, reminders or other communications generated through TradeDesk",
+      "people who create or use a Roscoe account",
+      "team members invited into a Roscoe workspace",
+      "customers, tenants, landlords, occupiers, suppliers and other contacts whose details are entered into Roscoe by a workspace user",
+      "people who receive messages, quotes, invoices, reminders or other communications generated through Roscoe",
     ],
     closing: [
       <>
-        TradeDesk is primarily a business-to-business software platform. In
-        many cases, the TradeDesk account holder decides what customer or
+        Roscoe is primarily a business-to-business software platform. In
+        many cases, the Roscoe account holder decides what customer or
         operational data is entered into the Service and how that data is used.
       </>,
     ],
@@ -25,11 +26,11 @@ const sections = [
     paragraphs: [
       <>
         For account, website, billing, support, product analytics and service
-        administration data, TradeDesk acts as a data controller.
+        administration data, Roscoe acts as a data controller.
       </>,
       <>
         For customer, property, job, form, communication, financial and media
-        data entered into a workspace by a user of the Service, TradeDesk
+        data entered into a workspace by a user of the Service, Roscoe
         generally acts as a data processor on behalf of that workspace.
       </>,
       <>
@@ -124,7 +125,7 @@ const sections = [
     bullets: [
       "directly from you when you register, sign in, complete setup, contact us, upload files or use the Service",
       "from authorised users in your workspace",
-      "from records created in TradeDesk by workspace users",
+      "from records created in Roscoe by workspace users",
       "from third-party identity providers when you use Google or Apple sign-in",
       "from processors and integrations used to support Service features",
       "automatically through logs, cookies, app events and device or browser signals",
@@ -171,10 +172,10 @@ const sections = [
     ],
   },
   {
-    title: "7. Communications sent through TradeDesk",
+    title: "7. Communications sent through Roscoe",
     paragraphs: [
       <>
-        TradeDesk may be used to send operational or customer-facing
+        Roscoe may be used to send operational or customer-facing
         communications such as:
       </>,
     ],
@@ -200,7 +201,7 @@ const sections = [
   {
     title: "8. AI, transcription and automation features",
     paragraphs: [
-      <>TradeDesk may offer AI-assisted features, including:</>,
+      <>Roscoe may offer AI-assisted features, including:</>,
     ],
     bullets: [
       "document extraction",
@@ -227,7 +228,7 @@ const sections = [
     title: "9. Location, maps and address data",
     paragraphs: [
       <>
-        If you use map, routing, postcode or address lookup features, TradeDesk
+        If you use map, routing, postcode or address lookup features, Roscoe
         may process:
       </>,
     ],
@@ -272,7 +273,7 @@ const sections = [
     paragraphs: [
       <>
         We may share personal data with service providers who help us operate
-        TradeDesk, including providers for:
+        Roscoe, including providers for:
       </>,
     ],
     bullets: [
@@ -287,7 +288,7 @@ const sections = [
     ],
     closing: [
       <>
-        Based on the current TradeDesk product and codebase, this may include
+        Based on the current Roscoe product and codebase, this may include
         services such as:
       </>,
     ],
@@ -384,7 +385,7 @@ const sections = [
     ],
     closing: [
       <>
-        If you are an end-customer whose data has been entered by a TradeDesk
+        If you are an end-customer whose data has been entered by a Roscoe
         user, you should usually contact that business first.
       </>,
     ],
@@ -392,7 +393,7 @@ const sections = [
   {
     title: "16. Children",
     paragraphs: [
-      <>TradeDesk is intended for business use and is not directed to children.</>,
+      <>Roscoe is intended for business use and is not directed to children.</>,
     ],
   },
   {
@@ -422,9 +423,9 @@ const sections = [
       <>Questions, complaints or requests about this Privacy Policy can be sent to:</>,
     ],
     contact: [
-      "TradeDesk App Ltd",
+      "Roscoe",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
-      "admin@tradedeskuk.com",
+      SUPPORT_EMAIL,
     ],
   },
   {
@@ -445,9 +446,9 @@ const sections = [
     ],
     closing: [<>For privacy questions or requests, contact:</>],
     contact: [
-      "TradeDesk App Ltd",
+      "Roscoe",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
-      "admin@tradedeskuk.com",
+      SUPPORT_EMAIL,
     ],
   },
 ]
@@ -466,10 +467,10 @@ export default function PrivacyPolicy() {
 
         <p className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-sm leading-6 text-slate-700">
           This Privacy Policy explains how{" "}
-          <code>TradeDesk App Ltd</code> (
-          <code>TradeDesk</code>, <code>we</code>, <code>us</code>,{" "}
+          <code>Roscoe</code> (
+          <code>Roscoe</code>, <code>we</code>, <code>us</code>,{" "}
           <code>our</code>) collects, uses, stores and shares personal data
-          when you use the TradeDesk website, mobile applications and related
+          when you use the Roscoe website, mobile applications and related
           services (together, the <code>Service</code>).
         </p>
 

@@ -1,14 +1,15 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import { SUPPORT_EMAIL } from "../lib/siteLinks"
 
 const sections = [
   {
     title: "1. Who we are",
     paragraphs: [
       <>
-        TradeDesk is provided by{" "}
-        <code>TradeDesk App Ltd</code> (
-        <code>TradeDesk</code>, <code>we</code>, <code>us</code>,{" "}
+        Roscoe is provided by{" "}
+        <code>Roscoe</code> (
+        <code>Roscoe</code>, <code>we</code>, <code>us</code>,{" "}
         <code>our</code>).
       </>,
     ],
@@ -32,10 +33,10 @@ const sections = [
     ],
   },
   {
-    title: "3. What TradeDesk is",
+    title: "3. What Roscoe is",
     paragraphs: [
       <>
-        TradeDesk is software for trade and field-service businesses. Depending
+        Roscoe is software for trade and field-service businesses. Depending
         on the plan and features enabled, it may include tools for:
       </>,
     ],
@@ -61,7 +62,7 @@ const sections = [
     title: "4. Business tool only",
     paragraphs: [
       <>
-        TradeDesk is a business operations tool. You remain responsible for
+        Roscoe is a business operations tool. You remain responsible for
         your business decisions, pricing, customer communications, legal
         compliance, record-keeping and professional obligations.
       </>,
@@ -134,7 +135,7 @@ const sections = [
     title: "8. Trade-specific tools, forms and certificates",
     paragraphs: [
       <>
-        TradeDesk may include trade-specific forms, templates, checklists,
+        Roscoe may include trade-specific forms, templates, checklists,
         certificates, surveys, reminders, calculators or suggested workflows.
       </>,
       <>
@@ -153,7 +154,7 @@ const sections = [
   {
     title: "9. AI-assisted features",
     paragraphs: [
-      <>TradeDesk may provide AI-assisted features such as:</>,
+      <>Roscoe may provide AI-assisted features such as:</>,
     ],
     bullets: [
       "drafting",
@@ -237,7 +238,7 @@ const sections = [
     ],
   },
   {
-    title: "13. Communications sent through TradeDesk",
+    title: "13. Communications sent through Roscoe",
     paragraphs: [
       <>
         The Service may allow you to send emails, texts, reminders, appointment
@@ -344,7 +345,7 @@ const sections = [
     title: "19. Limitation of liability",
     paragraphs: [
       <>
-        To the maximum extent permitted by law, TradeDesk will not be liable
+        To the maximum extent permitted by law, Roscoe will not be liable
         for:
       </>,
     ],
@@ -363,7 +364,7 @@ const sections = [
       </>,
     ],
     secondaryBullets: [
-      "the amount paid by you to TradeDesk in the 12 months before the event giving rise to the claim, or",
+      "the amount paid by you to Roscoe in the 12 months before the event giving rise to the claim, or",
       "[Insert minimum fallback amount if desired]",
     ],
   },
@@ -371,7 +372,7 @@ const sections = [
     title: "20. Indemnity",
     paragraphs: [
       <>
-        You agree to indemnify and hold TradeDesk harmless against claims,
+        You agree to indemnify and hold Roscoe harmless against claims,
         liabilities, losses and costs arising from:
       </>,
     ],
@@ -422,9 +423,9 @@ const sections = [
     title: "24. Contact",
     paragraphs: [<>Questions about these Terms can be sent to:</>],
     contact: [
-      "TradeDesk App Ltd",
+      "Roscoe",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
-      "admin@tradedeskuk.com",
+      SUPPORT_EMAIL,
     ],
   },
   {
@@ -458,7 +459,7 @@ export default function Terms() {
 
         <p className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-6 text-amber-900">
           These Terms of Service (<code>Terms</code>) govern your access to and
-          use of the TradeDesk website, mobile applications and related services
+          use of the Roscoe website, mobile applications and related services
           (together, the <code>Service</code>).
         </p>
 

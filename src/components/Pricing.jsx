@@ -7,6 +7,7 @@ import cleaningAddOnImage from "../assets/addons/cleaning.jpeg"
 import landscapingAddOnImage from "../assets/addons/landscaping.jpg"
 import buildingMaintenanceAddOnImage from "../assets/addons/building-maintenance.jpg"
 import paintingDecoratingAddOnImage from "../assets/addons/painting-decorating.avif"
+import { WEB_APP_URL } from "../lib/siteLinks"
 
 const plans = [
   {
@@ -25,11 +26,13 @@ const plans = [
       "Core jobs, quotes, invoices and diary",
       "Deposits and staged invoices",
       "Manual scheduling",
+      "Job photos",
       "Trade packs available at £15/mo",
     ],
     features: [
       "Customers and properties",
       "Jobs and notes",
+      "Job photos",
       "Quotes",
       "Invoices",
       "Deposits and staged invoices",
@@ -40,7 +43,7 @@ const plans = [
       "Basic reporting",
     ],
     accent: "slate",
-    cta: "Register interest",
+    cta: "Start free",
   },
   {
     name: "Starter",
@@ -55,11 +58,13 @@ const plans = [
       "Up to 3 users",
       "Up to 50 jobs per calendar month",
       "50 Smart drafts per month",
+      "Job video uploads up to 30 seconds",
       "Supplier tools and advanced checklists",
       "Trade packs discounted to £10/mo",
     ],
     features: [
       "Everything in Free",
+      "Job video uploads up to 30 seconds",
       "Inbox and customer communications",
       "Customer portal",
       "Online booking",
@@ -71,7 +76,7 @@ const plans = [
       "Branded paperwork",
     ],
     accent: "white",
-    cta: "Register interest",
+    cta: "Get started",
   },
   {
     name: "Pro",
@@ -89,9 +94,12 @@ const plans = [
       "40 shared Smart tool runs per month",
       "10 route planner runs per month",
       "Trade packs discounted to £5/mo",
+      "Job video uploads up to 60 seconds",
     ],
     features: [
       "Everything in Starter",
+      "Web and desktop workspace access when available",
+      "Longer job videos up to 60 seconds",
       "Smart price match",
       "Video transcription",
       "Smart auto scheduler",
@@ -100,7 +108,7 @@ const plans = [
       "Customer job tracking links",
     ],
     accent: "cyan",
-    cta: "Register interest",
+    cta: "Get started",
   },
   {
     name: "Premium",
@@ -118,9 +126,11 @@ const plans = [
       "75 shared Smart tool runs per month",
       "25 route planner runs per month",
       "Trade packs included",
+      "Job video uploads up to 60 seconds",
     ],
     features: [
       "Everything in Pro",
+      "Web and desktop workspace access when available",
       "Higher monthly caps",
       "Advanced route planner",
       "Guided setup and priority support",
@@ -129,7 +139,7 @@ const plans = [
       "Designed for higher-volume businesses",
     ],
     accent: "dark",
-    cta: "Register interest",
+    cta: "Get started",
   },
 ]
 
@@ -258,21 +268,6 @@ function planClasses(accent) {
 }
 
 export default function Pricing() {
-  function registerPlanInterest(planCode) {
-    window.dispatchEvent(
-      new CustomEvent("tradedesk:plan-interest", {
-        detail: { plan: planCode },
-      }),
-    )
-    window.history.replaceState(null, "", "#register")
-    requestAnimationFrame(() => {
-      document.getElementById("register")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
-    })
-  }
-
   return (
     <section id="pricing" className="bg-slate-50 py-20 text-slate-950">
       <div className="mx-auto max-w-6xl px-6">
@@ -395,13 +390,12 @@ export default function Pricing() {
                   </div>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => registerPlanInterest(plan.code)}
+                <a
+                  href={WEB_APP_URL}
                   className={`mt-8 rounded-2xl px-5 py-3 text-sm font-semibold transition hover:-translate-y-0.5 ${styles.button}`}
                 >
                   {plan.cta}
-                </button>
+                </a>
               </article>
             )
           })}

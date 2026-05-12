@@ -8,6 +8,8 @@ import Terms from "./pages/Terms"
 import Cookies from "./pages/Cookies"
 import Contact from "./pages/Contact"
 import AccountDeletion from "./pages/AccountDeletion"
+import DesktopPage from "./pages/DesktopPage"
+import WorkspaceComingSoonPage from "./pages/WorkspaceComingSoonPage"
 import ScrollToHash from "./components/ScrollToHash"
 import CookieConsentBanner from "./components/CookieConsentBanner"
 
@@ -22,6 +24,8 @@ export default function App() {
         <Route path="/support" element={<Navigate to="/features" replace />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/about" element={<Navigate to="/" replace />} />
+        <Route path="/desktop" element={<DesktopPage />} />
+        <Route path="/workspace-coming-soon" element={<WorkspaceComingSoonPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/cookies" element={<Cookies />} />

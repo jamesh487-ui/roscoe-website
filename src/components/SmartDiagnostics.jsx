@@ -12,7 +12,7 @@ const steps = [
   },
   {
     title: "Confirm the appliance",
-    text: "TradeDesk can pull through useful appliance details where available, including manufacturer, model, GC number and output.",
+    text: "Roscoe can pull through useful appliance details where available, including manufacturer, model, GC number and output.",
     image: confirmScreenshot,
     alt: "Smart Diagnostics screen for confirming detected appliance details",
   },

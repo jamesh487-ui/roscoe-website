@@ -7,7 +7,7 @@ const previews = [
   {
     label: "Dashboard",
     title: "Start the day with the important work in front of you",
-    text: "See live jobs, customer counts, open quotes, outstanding invoices and quick actions as soon as TradeDesk opens.",
+    text: "See live jobs, customer counts, open quotes, outstanding invoices and quick actions as soon as Roscoe opens.",
     image: dashboardScreenshot,
   },
   {
@@ -63,7 +63,7 @@ export default function ProductPreview() {
               <div className="-mt-2 aspect-[9/12] overflow-hidden rounded-[1.25rem] bg-slate-900">
                 <img
                   src={preview.image}
-                  alt={`TradeDesk ${preview.label} screenshot`}
+                  alt={`Roscoe ${preview.label} screenshot`}
                   className="h-full w-full scale-[1.04] object-cover object-top transition duration-500 group-hover:scale-[1.07]"
                 />
               </div>

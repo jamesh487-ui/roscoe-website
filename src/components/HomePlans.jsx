@@ -37,7 +37,7 @@ const plans = [
     ],
     features: [
       "Everything in Free",
-      "TradeDesk inbox and customer messages",
+      "Roscoe inbox and customer messages",
       "Customer portal",
       "Online booking",
       "Asset and appliance records",
@@ -62,6 +62,7 @@ const plans = [
     ],
     features: [
       "Everything in Starter",
+      "Web and desktop workspace access when available",
       "Advanced records and documents",
       "Shared Smart tool allowance",
       "Smart price match",
@@ -87,6 +88,7 @@ const plans = [
     ],
     features: [
       "Everything in Pro",
+      "Web and desktop workspace access when available",
       "Higher monthly caps",
       "Advanced route planner",
       "Priority setup and support",
@@ -102,7 +104,7 @@ export default function HomePlans() {
         <div className="td-reveal flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-sky-700">
-              Plans at launch
+              Pricing
             </p>
 
             <h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-slate-950 sm:text-5xl">
