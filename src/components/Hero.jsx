@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import heroDevicesCombined from "../assets/screenshots/hero-devices-combined.png"
+import heroVideo from "../assets/videos/hero-background.mp4"
 import { WEB_APP_SIGNUP_URL } from "../lib/siteLinks"
-import heroVideo from "../../../../native/assets/Sequence 02.mp4"
 
 export default function Hero() {
   return (
