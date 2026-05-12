@@ -1,6 +1,6 @@
-# TradeDesk Website
+# Roscoe Website
 
-Marketing website for TradeDesk. This is a standalone Vite/React app kept inside the main local TradeDesk workspace, but it has its own GitHub repo and Vercel project.
+Marketing website for Roscoe. This is a standalone Vite/React app kept inside the main local Roscoe workspace, but it has its own GitHub repo and Vercel project.
 
 ## Local Development
 
@@ -39,7 +39,7 @@ This website is already configured as a separate Git repo:
 cd /Users/jamesharrison/tradedesk-v2/projects/tradedesk-website
 git status
 git add .
-git commit -m "Update TradeDesk website"
+git commit -m "Update Roscoe website"
 git push origin main
 ```
 
@@ -50,7 +50,7 @@ Do not commit `.env`, `node_modules`, `dist`, or `.vercel`.
 Use these settings when importing the GitHub repo into Vercel:
 
 - Framework Preset: `Vite`
-- Root Directory: leave blank if the Vercel project uses the `tradedesk-website` repo directly
+- Root Directory: leave blank if the Vercel project uses the website repo directly
 - Install Command: `npm install`
 - Build Command: `npm run build`
 - Output Directory: `dist`
