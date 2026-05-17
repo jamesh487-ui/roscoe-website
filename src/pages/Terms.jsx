@@ -8,7 +8,7 @@ const sections = [
     paragraphs: [
       <>
         Roscoe is provided by{" "}
-        <code>Roscoe</code> (
+        <code>Roscoe Software Ltd</code> (
         <code>Roscoe</code>, <code>we</code>, <code>us</code>,{" "}
         <code>our</code>).
       </>,
@@ -360,12 +360,9 @@ const sections = [
     closing: [
       <>
         Subject to applicable law, our total liability arising from or in
-        connection with the Service will not exceed the greater of:
+        connection with the Service will not exceed the amount paid by you to
+        Roscoe in the 12 months before the event giving rise to the claim.
       </>,
-    ],
-    secondaryBullets: [
-      "the amount paid by you to Roscoe in the 12 months before the event giving rise to the claim, or",
-      "[Insert minimum fallback amount if desired]",
     ],
   },
   {
@@ -426,21 +423,6 @@ const sections = [
       "Roscoe",
       "2 Station Road, Nafferton, East Yorkshire, YO25 4LT",
       SUPPORT_EMAIL,
-    ],
-  },
-  {
-    title: "25. Practical publication notes",
-    paragraphs: [
-      <>
-        These Terms should stay aligned with the current legal trading entity,
-        website footer, signup flow and any subscription acceptance screens.
-      </>,
-      <>You should also make sure these Terms are linked from:</>,
-    ],
-    bullets: [
-      "the website footer",
-      "native sign-up or subscription screens",
-      "public-facing signup, quote or invoice journeys where appropriate",
     ],
   },
 ]

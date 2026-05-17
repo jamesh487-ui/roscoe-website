@@ -5,7 +5,12 @@ import { SUPPORT_EMAIL } from "../lib/siteLinks"
 const sections = [
   {
     title: "1. Scope",
-    paragraphs: [<>This Privacy Policy applies to:</>],
+    paragraphs: [
+      <>
+        This Privacy Policy applies to Roscoe, provided by{" "}
+        <code>Roscoe Software Ltd</code>, and to:
+      </>,
+    ],
     bullets: [
       "visitors to our website",
       "people who create or use a Roscoe account",
