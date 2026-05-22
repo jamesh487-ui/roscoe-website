@@ -13,26 +13,51 @@ export default function AccountDeletion() {
         </h1>
 
         <p className="mb-8 leading-relaxed text-slate-600">
-          Roscoe users can request deletion of their account and associated
-          workspace data by contacting our support team. This page explains how
-          to make that request and what happens afterwards.
+          Roscoe users can delete their account from inside the app. This page
+          explains where to find that option, when workspace data is also
+          removed, and when to contact support instead.
         </p>
 
         <div className="rounded-lg border border-slate-200 bg-white p-8 shadow-sm space-y-8">
           <div>
             <h2 className="mb-3 text-xl font-semibold text-slate-900">
-              How to request deletion
+              Delete your account in the app
             </h2>
             <p className="leading-relaxed text-slate-600">
-              Email{" "}
+              Open Roscoe and go to <strong>Settings</strong>. If you are a
+              standard user, choose <strong>Delete account</strong>. If you are
+              the workspace owner, choose <strong>Delete workspace account</strong>.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="mb-3 text-xl font-semibold text-slate-900">
+              What gets deleted
+            </h2>
+            <p className="leading-relaxed text-slate-600">
+              For standard users, deleting the account removes that user’s
+              access and account data. For workspace owners, deleting the
+              workspace account removes the workspace and associated workspace
+              data, subject to any legal, tax, fraud-prevention, billing or
+              accounting records we are required to retain.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="mb-3 text-xl font-semibold text-slate-900">
+              If you cannot access the app
+            </h2>
+            <p className="leading-relaxed text-slate-600">
+              If you cannot sign in and still need help deleting your account,
+              contact{" "}
               <a
                 href={`mailto:${SUPPORT_EMAIL}?subject=Roscoe%20account%20deletion%20request`}
                 className="text-sky-600 hover:underline"
               >
                 {SUPPORT_EMAIL}
               </a>{" "}
-              from the email address linked to your Roscoe account and use
-              the subject line <strong>Account deletion request</strong>.
+              from the email address linked to your Roscoe account and use the
+              subject line <strong>Account deletion request</strong>.
             </p>
           </div>
 
@@ -53,11 +78,10 @@ export default function AccountDeletion() {
               What happens next
             </h2>
             <p className="leading-relaxed text-slate-600">
-              We may need to verify that the request is genuine before deleting
-              the account. Once verified, we will process the request and remove
-              the account together with associated workspace data, subject to
-              any legal, tax, fraud-prevention or accounting records we are
-              required to retain.
+              If the deletion is started in the app, Roscoe will begin the
+              deletion flow immediately. If the request comes through support,
+              we may need to verify that the request is genuine before
+              processing it.
             </p>
           </div>
 

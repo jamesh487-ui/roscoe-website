@@ -23,7 +23,14 @@ export default function Contact() {
             Contact details
           </h2>
 
-          <p className="mb-2 text-slate-600">Roscoe</p>
+          <p className="mb-2 text-slate-600 font-medium">
+            Roscoe Software Ltd
+          </p>
+
+          <p className="mb-2 text-slate-600">
+            Registered office: 2 Station Road, Nafferton, Driffield, England,
+            YO25 4LT, United Kingdom
+          </p>
 
           <p className="mb-2 text-slate-600">
             Email:{" "}

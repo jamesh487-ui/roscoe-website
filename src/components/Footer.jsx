@@ -115,12 +115,18 @@ export default function Footer() {
               </a>
             </p>
 
-            <p className="mt-1 text-sm text-slate-400">United Kingdom</p>
+            <p className="mt-1 text-sm text-slate-400">
+              Roscoe Software Ltd, 2 Station Road, Nafferton, Driffield,
+              England, YO25 4LT, United Kingdom
+            </p>
           </div>
         </div>
 
         <div className="mt-10 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 text-sm text-slate-500 md:flex-row">
-          <p>&copy; {new Date().getFullYear()} Roscoe. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Roscoe Software Ltd. All rights
+            reserved.
+          </p>
 
           <p>Built for trade and field-service businesses.</p>
         </div>
