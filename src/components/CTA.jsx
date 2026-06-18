@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import { ANDROID_APP_URL, IOS_APP_URL, WEB_APP_URL } from "../lib/siteLinks"
+import AppStoreButtons from "./AppStoreButtons"
+import { WEB_APP_URL } from "../lib/siteLinks"
 
 export default function CTA() {
   return (
@@ -66,21 +67,7 @@ export default function CTA() {
                 See the desktop workspace
               </Link>
 
-              <div className="grid gap-3 pt-2 sm:grid-cols-2">
-                <a
-                  href={IOS_APP_URL}
-                  className="rounded-2xl border border-slate-700 px-4 py-3 text-center text-sm font-semibold text-slate-200 transition hover:bg-slate-700"
-                >
-                  Download on iPhone
-                </a>
-
-                <a
-                  href={ANDROID_APP_URL}
-                  className="rounded-2xl border border-slate-700 px-4 py-3 text-center text-sm font-semibold text-slate-200 transition hover:bg-slate-700"
-                >
-                  Download on Android
-                </a>
-              </div>
+              <AppStoreButtons className="pt-2" />
 
               <p className="pt-2 text-xs leading-relaxed text-slate-400">
                 The web app is live now. Native desktop downloads will follow.

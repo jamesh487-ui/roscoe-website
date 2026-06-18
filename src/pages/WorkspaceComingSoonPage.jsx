@@ -2,8 +2,8 @@ import { useMemo } from "react"
 import { Link, useLocation } from "react-router-dom"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import AppStoreButtons from "../components/AppStoreButtons"
 import heroDevicesCombined from "../assets/screenshots/hero-devices-combined.png"
-import { ANDROID_APP_URL, IOS_APP_URL } from "../lib/siteLinks"
 
 export default function WorkspaceComingSoonPage() {
   const location = useLocation()
@@ -35,22 +35,11 @@ export default function WorkspaceComingSoonPage() {
               this page is here to stop people landing on an unfinished product.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={IOS_APP_URL}
-                className="rounded-2xl bg-white px-6 py-3 text-sm font-black text-[#07162f] shadow-xl shadow-slate-950/20 transition hover:-translate-y-0.5 hover:bg-cyan-50"
-              >
-                Get iPhone app
-              </a>
-              <a
-                href={ANDROID_APP_URL}
-                className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/15"
-              >
-                Get Android app
-              </a>
+            <div className="mt-8 space-y-3">
+              <AppStoreButtons />
               <Link
                 to="/desktop"
-                className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/15"
+                className="inline-flex rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/15"
               >
                 Explore desktop page
               </Link>
@@ -68,11 +57,10 @@ export default function WorkspaceComingSoonPage() {
       </section>
 
       <section className="px-4 py-14 sm:px-6 sm:py-20">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
           {[
             "Use Roscoe on mobile while the browser workspace is completed.",
             "Desktop downloads are planned after the web workspace is properly finished.",
-            "We would rather block early access than send people into something half-ready.",
           ].map((item) => (
             <div
               key={item}

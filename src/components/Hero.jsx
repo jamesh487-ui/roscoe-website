@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import AppStoreButtons from "./AppStoreButtons"
 import heroDevicesCombined from "../assets/screenshots/hero-devices-combined.png"
 import heroVideo from "../assets/videos/hero-background.mp4"
 import { WEB_APP_SIGNUP_URL } from "../lib/siteLinks"
@@ -52,6 +53,13 @@ function DesktopHero() {
               Explore desktop
             </Link>
           </div>
+
+          <div className="mt-6">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-200">
+              Download the app
+            </p>
+            <AppStoreButtons />
+          </div>
         </div>
 
         <HeroDevices />
@@ -86,6 +94,13 @@ function MobileHero() {
           >
             Desktop
           </Link>
+        </div>
+
+        <div className="mt-5">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-200">
+            Download the app
+          </p>
+          <AppStoreButtons />
         </div>
       </div>
 

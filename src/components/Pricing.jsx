@@ -27,7 +27,7 @@ const plans = [
       "Deposits and staged invoices",
       "Manual scheduling",
       "Job photos",
-      "Trade packs available at £15/mo",
+      "Future trade packs available at £15/mo",
     ],
     features: [
       "Customers and properties",
@@ -60,7 +60,7 @@ const plans = [
       "50 Smart drafts per month",
       "Job video uploads up to 30 seconds",
       "Supplier tools and advanced checklists",
-      "Trade packs discounted to £10/mo",
+      "Future trade packs discounted to £10/mo",
     ],
     features: [
       "Everything in Free",
@@ -93,7 +93,7 @@ const plans = [
       "250 Smart drafts per month",
       "40 shared Smart tool runs per month",
       "10 route planner runs per month",
-      "Trade packs discounted to £5/mo",
+      "Future trade packs discounted to £5/mo",
       "Job video uploads up to 60 seconds",
     ],
     features: [
@@ -118,14 +118,14 @@ const plans = [
     cadence: "/mo",
     costPerJob: "25p per included job",
     summary:
-      "Built for busier teams that want higher monthly caps, advanced routing, included trade packs and priority help.",
+      "Built for busier teams that want higher monthly caps, advanced routing, future trade packs and priority help.",
     includes: [
       "Unlimited users",
       "Up to 350 jobs per calendar month",
       "Unlimited Smart drafts per month",
       "75 shared Smart tool runs per month",
       "25 route planner runs per month",
-      "Trade packs included",
+      "Future trade packs included",
       "Job video uploads up to 60 seconds",
     ],
     features: [
@@ -134,8 +134,8 @@ const plans = [
       "Higher monthly caps",
       "Advanced route planner",
       "Guided setup and priority support",
-      "Onboarding help for team setup, payments, diary settings and trade packs",
-      "Trade packs included",
+      "Onboarding help for team setup, payments, diary settings and future trade packs",
+      "Future trade packs included",
       "Designed for higher-volume businesses",
     ],
     accent: "dark",
@@ -149,12 +149,12 @@ const planHighlights = [
     text: "Every plan includes customers, jobs, diary, quotes, invoices, customer links, basic checklists, inventory and basic reporting.",
   },
   {
-    title: "Add trade packs when needed",
-    text: "Trade packs add specialist records, forms and trade-specific tools. Free and Starter packs include a smaller allowance for pack-specific smart tools.",
+    title: "Scale when the diary gets busier",
+    text: "Move up when you need more monthly jobs, more users, longer media, supplier tools or smarter scheduling.",
   },
   {
-    title: "Better plan, lower pack cost",
-    text: "Packs are £15/mo on Free, £10/mo on Starter, £5/mo on Pro and included with Premium.",
+    title: "Future packs are already priced",
+    text: "Specialist trade packs are coming soon. The higher your plan, the lower the future pack cost: £15/mo on Free, £10/mo on Starter, £5/mo on Pro and included with Premium.",
   },
 ]
 
@@ -283,7 +283,8 @@ export default function Pricing() {
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Every plan includes the core tools for customers, jobs, diary,
             quotes and invoices. Move up when you need more jobs, more users,
-            more automation, deeper reporting or cheaper trade packs.
+            more automation, deeper reporting, priority support or better
+            pricing on future trade packs.
           </p>
         </div>
 
@@ -408,13 +409,13 @@ export default function Pricing() {
                 Trade packs
               </p>
               <h3 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
-                Add specialist tools without bloating the core app
+                Specialist trade packs are coming soon
               </h3>
               <p className="mt-4 text-base leading-8 text-slate-600">
-                Trade packs are optional add-ons for forms, records and
-                specialist tools. The Plumbing & Heating pack includes its own
-                Smart Diagnostics allowance, separate from the shared Smart
-                tool allowance on Pro and Premium.
+                Trade packs are planned add-ons for specialist forms, records
+                and trade-specific tools. They are not live yet, but the plan
+                discounts are shown now so you can choose the right tier before
+                they arrive.
               </p>
             </div>
 
@@ -525,7 +526,8 @@ export default function Pricing() {
           <p className="mt-6 text-sm leading-7 text-slate-500">
             All plans are billed monthly. Upgrade when you need more users,
             more jobs, more smart usage or more automation. Trade packs are
-            optional add-ons unless they are included in your plan.
+            coming soon, and their planned discounts are shown against each
+            plan.
           </p>
         </div>
       </div>

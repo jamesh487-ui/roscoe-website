@@ -9,8 +9,8 @@ export default function PricingPage() {
       <Header />
       <PageIntro
         eyebrow="Pricing"
-        title="Core plans first. Trade packs when you need them."
-        text="Start with the tools every trade business needs, then add specialist packs for forms, records and trade-specific tools when they are useful."
+        title="Simple plans for running the work."
+        text="Start with the core tools every trade business needs, then move up when you need more jobs, users, smart tools, reporting and support."
       />
       <Pricing />
       <Footer />
