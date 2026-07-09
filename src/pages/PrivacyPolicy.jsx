@@ -113,12 +113,20 @@ const sections = [
           "payment references",
           "limited payment-related metadata",
           "connected payout or payment account status where payment services are enabled",
+          "merchant onboarding and verification status where payment services such as Stripe Terminal or Tap to Pay on iPhone are enabled",
         ],
         closing: [
           <>
             We do not intentionally store full payment card numbers ourselves.
             Card payments and subscription billing are generally handled by
             third-party payment processors such as Stripe.
+          </>,
+          <>
+            Where in-person payment features such as Tap to Pay on iPhone are
+            enabled, we may also process merchant account identifiers, device
+            eligibility or connection status, reader session status, payment
+            intent references, transaction outcome data and related operational
+            metadata needed to support those payment flows.
           </>,
         ],
       },
@@ -146,6 +154,7 @@ const sections = [
       "power scheduling, routing, address validation and map-based workflows",
       "send transactional messages, emails, reminders, notices and payment links through the Service",
       "process subscriptions, billing and payment-related workflows",
+      "support merchant onboarding, account verification and in-person payment features such as Tap to Pay on iPhone where enabled",
       "provide support, onboarding and account communications",
       "maintain security, investigate misuse and prevent fraud",
       "improve reliability, usability, performance and product design",
@@ -317,6 +326,13 @@ const sections = [
     ],
     tail: [
       <>We do not sell personal data in the ordinary meaning of that phrase.</>,
+      <>
+        Where payment services are enabled, relevant merchant, transaction and
+        operational payment data may be shared with Stripe and, where required
+        by the payment flow, Apple or other platform providers to enable Tap to
+        Pay on iPhone, merchant verification, fraud prevention, compliance and
+        transaction processing.
+      </>,
     ],
   },
   {

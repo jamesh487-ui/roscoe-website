@@ -193,6 +193,12 @@ const sections = [
         control, including outages, price changes, API changes, account
         restrictions, discontinued features or third-party data handling.
       </>,
+      <>
+        Where payment services are enabled, Roscoe may integrate with payment
+        providers such as Stripe to support online card payments, payment
+        links, Tap to Pay on iPhone, merchant onboarding, account verification
+        and related in-person or remote payment workflows.
+      </>,
     ],
   },
   {
@@ -220,6 +226,17 @@ const sections = [
         If billing, checkout, customer card payments or subscription management
         are handled by Stripe or another payment provider, that provider may
         process your payment details subject to its own terms and policies.
+      </>,
+      <>
+        If you enable merchant payment features, including Tap to Pay on
+        iPhone, you are responsible for completing any onboarding, identity,
+        business verification, eligibility, device, territory or compliance
+        requirements imposed by Stripe, Apple or other relevant providers.
+      </>,
+      <>
+        Roscoe is a software provider and platform integrator. We are not the
+        merchant acquirer, payment processor, card network, bank or issuer for
+        those transactions unless we expressly state otherwise.
       </>,
       <>We may suspend, limit or downgrade access for overdue accounts.</>,
     ],
